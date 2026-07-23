@@ -1,189 +1,249 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: I Ro Lim
+  label: Computational Media Researcher, Poet, and Developer
+  location: Republic of Korea
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: Computational media researcher working across digital humanities, artificial intelligence, Korean literature, media aesthetics, and art.
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+      username: poet-developer
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
-        highlights:
-          - Description 1.
-          - Description 2.
+      - institution: The Academy of Korean Studies
+        location: Seongnam, Republic of Korea
+        area: Cultural Informatics
+        studyType: M.A. Candidate
+        start_date: 2025
+        end_date: present
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
-        highlights:
-          - Description 1.
-          - Description 2.
+      - institution: Hongik University
+        location: Seoul, Republic of Korea
+        area: Advertising and Public Relations
+        studyType: B.B.A.
+        start_date: 2014
+        end_date: 2019
+
+      - institution: Hongik University
+        location: Seoul, Republic of Korea
+        area: Digital Media Design
+        studyType: B.F.A.
+        start_date: 2013
+        end_date: 2019
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
-        highlights:
-          - Relativity
-          - Description 2.
+      - company: Korean Modern Literature Scholars Conference
+        position: Web Designer and Web Publisher
+        start_date: 2025-06
+        end_date: present
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
-        highlights:
-          - Description 1.
-          - Description 2.
+      - company: DH2026, Alliance of Digital Humanities Organizations (ADHO)
+        position: CI and Web Designer
+        start_date: 2025-03
+        end_date: present
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
+      - company: Center for Digital Humanities at The Academy of Korean Studies
+        position: Researcher
+        start_date: 2024-03
+        end_date: present
 
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
+      - company: Cosmian News
+        position: Columnist
+        start_date: 2023-10
+        end_date: present
 
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
+      - company: Art Seoul 2025, Hangaram Art Museum
+        position: Exhibition Planning and Design
+        start_date: 2025-03
+        end_date: 2025-04
 
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
-        highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+      - company: WORLD ART EXPO 2025, COEX
+        position: Exhibition Planning and Design
+        start_date: 2025-01
+        end_date: 2025-01
 
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+      - company: AKS Center for Digital Humanities
+        position: Web and CI Designer
+        start_date: 2024-09
+        end_date: 2024-09
 
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+      - company: CROSSING ONE, H.ART1
+        position: Exhibition Brand Designer
+        start_date: 2023-06
+        end_date: 2023-06
 
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
-
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
-
-    Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Languages:
-      - name: German
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
+      - company: Independent Music Activity
+        position: Band Vocalist
+        start_date: 2013
+        end_date: 2019
 
     Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
+      - name: Multilingual and Multi-layered Cultural Heritage Description Platform for AI Smart Docents
+        start_date: 2025-09
+        end_date: 2026-02
+        summary: Research assistant on a platform for generating cultural heritage descriptions focused on Joseon-period Buddhist paintings.
+
+      - name: Advanced NLP and LLM-Based Digital Korean Studies Research and Education Methodology
+        start_date: 2025-03
+        end_date: 2025-08
+        summary: Research assistant on computational methods for digital Korean studies and education.
+
+      - name: Networked Educational Model in Digital Humanities
+        start_date: 2025-03
+        end_date: 2025-06
+        summary: External participating researcher and annotator on a National Research Foundation of Korea project.
         highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
+          - https://zenodo.org/records/16616347
 
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: Ontology and LOD System for Inmulgo (人物考)
+        start_date: 2024-09
+        end_date: 2025-02
+        summary: Research assistant on ontology design and linked open data system construction.
 
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: Historical Document Data Design and Educational Content
+        start_date: 2024-03
+        end_date: 2024-08
+        summary: Research assistant on prior model analysis and educational content for historical document data design.
+
+    Publications:
+      - title: "KPoEM: A Human-Annotated Dataset for Emotion Classification and RAG-Based Poetry Generation in Korean Modern Poetry"
+        authors:
+          - I Ro Lim
+          - Haein Ji
+          - Byungjun Kim
+        publisher: The Review of Korean Studies, 29(1), 161–206
+        releaseDate: 2026
+        url: https://doi.org/10.25024/review.2026.29.1.006
+        summary: First-author journal article.
+
+      - title: 오늘도 꽃은 피어라
+        authors:
+          - 임이로
+        publisher: 선한능력
+        releaseDate: 2024
+        url: https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000010798546
+        summary: Poetry collection.
+
+    Datasets and Models:
+      - name: KPoEM (Korean Poetry Emotion Mapping) Dataset — Producer
+        start_date: 2025
+        end_date: 2025
+        summary: First author and producer of a human-annotated emotion dataset for Korean modern poetry, developed with Haein Ji, Seul Koo, J. Yun, S.-yi Jung, and Byungjun Kim at AKS-DHLAB.
+        highlights:
+          - "Hugging Face DOI: https://doi.org/10.57967/hf/6303"
+          - "Zenodo: https://zenodo.org/records/15598092"
+
+      - name: KCoEM (Korean Color Emotion Mapping) Dataset — Producer
+        start_date: 2025
+        end_date: 2025
+        summary: Sole producer of a Korean color–emotion mapping dataset.
+        highlights:
+          - "DOI: https://doi.org/10.5281/zenodo.17797747"
+
+      - name: KNoTE (Korean Novel TEI Encoded) Dataset v4 — Annotator
+        start_date: 2026
+        end_date: 2026
+        summary: Annotator for a TEI-encoded Korean novel dataset.
+        highlights:
+          - "DOI: https://doi.org/10.5281/zenodo.19813475"
+
+      - name: KPoEM Emotion Classification Model — Producer
+        start_date: 2025
+        end_date: 2025
+        summary: First author and producer of an emotion classification model for Korean modern poetry, developed with Haein Ji and Byungjun Kim at AKS-DHLAB.
+        highlights:
+          - "Hugging Face DOI: https://doi.org/10.57967/hf/6301"
+
+      - name: Emotion-to-Color Algorithm — Co-Reading Engine
+        start_date: 2025
+        end_date: present
+        summary: Designed and developed an algorithm that maps poetic emotion to color for the Co-Reading human–AI media system.
+
+    Selected Presentations:
+      - name: "Co-Reading: A Human–AI Co-Reader Media System for Poetry–Emotion–Color"
+        start_date: 2026-01-23
+        end_date: 2026-01-23
+        summary: First-author presentation with Byungjun Kim at the HKADH 2026 Conference, Hong Kong Association for Digital Humanities, Hong Kong.
+        highlights:
+          - "Program: https://2026.hkadh.org/"
+          - "DOI: https://doi.org/10.5281/zenodo.18753718"
+
+      - name: "데이터셋의 환경적 전환: 인공지능과 함께 읽기(Co-Reading)를 통한 한국 근현대 시–감정–색채 멀티모달 미디어"
+        start_date: 2025-12
+        end_date: 2025-12
+        summary: Sole-author presentation at the “Unfamiliar Boundaries of Film and Media, Mediating Research” Graduate Student Conference, Chung-Ang University Center for Cinema and Media Studies, Seoul.
+        highlights:
+          - "Program: https://cau-ccms.com/allpost/announce-ko/29-1/"
+          - "DOI: https://doi.org/10.5281/zenodo.17850832"
+
+      - name: "한국 근현대시의 감정 분석과 인공지능 시 창작 응용: KPoEM 데이터셋 구축과 활용"
+        start_date: 2025-10-18
+        end_date: 2025-10-18
+        summary: First-author presentation with Haein Ji and Byungjun Kim at the 180th Conference of the Bangyo Language and Literature Society, Sungkyunkwan University, Seoul.
+        highlights:
+          - "Program: http://bangyo.or.kr/notice/view.asp?key=176&Page=1"
+          - "DOI: https://doi.org/10.5281/zenodo.18752999"
+
+      - name: "Decoding the Poetic Language of Emotion in Korean Modern Poetry: Insights from a Human-Labeled Dataset and AI Modeling"
+        start_date: 2025-04-25
+        end_date: 2025-04-25
+        summary: First-author presentation with Haein Ji and Byungjun Kim at the Digital Humanities and Social Sciences Korea Conference, University of Pennsylvania, Philadelphia.
+        highlights:
+          - "Program: https://bkksg.com/project/165"
+          - "DOI: https://doi.org/10.5281/zenodo.18752715"
+
+      - name: "Constructing an Emotion-Labeled Dataset of Modern Korean Poetry: A Foundational Study for Computational Emotion Classification and Generative AI Applications in Literary Texts"
+        start_date: 2025-02-13
+        end_date: 2025-02-13
+        summary: First-author poster presentation with Haein Ji and Byungjun Kim at the 2nd Korean Modern Literature Scholars Conference, Sungkyunkwan University, Seoul.
+        highlights:
+          - "Program: https://bkksg.com/project/159"
+          - "DOI: https://doi.org/10.5281/zenodo.15055795"
+
+    Awards:
+      - title: DH Awards 2025 Nominee — KPoEM Dataset
+        date: 2025
+        awarder: DH Awards
+        summary: The KPoEM Dataset was nominated for the DH Awards 2025.
+
+      - title: Humanities and Social Sciences Master's Student Research Grant
+        date: 2025-08
+        awarder: National Research Foundation of Korea
+        summary: Selected for the 2025 master's student research support program.
+
+      - title: Research Scholarship
+        date: 2026
+        awarder: The Academy of Korean Studies
+
+      - title: Tuition Fee Exemption Scholarship
+        date: 2025
+        awarder: The Academy of Korean Studies
+
+      - title: Silver Prize, Humanities Column Category
+        date: 2023
+        awarder: 5th Cosmian Awards
+
+      - title: Scholarship Recipient
+        awarder: Samsung Dream Scholarship Foundation
+
+    Skills:
+      - name: Programming
+        level: Advanced
+        keywords: "Python, R, JavaScript, C++"
+
+      - name: AI and Data Analysis
+        level: Advanced
+        keywords: "PyTorch, TensorFlow, Pandas, NumPy, RAG, LangChain, Prompt Engineering"
+
+      - name: Humanities Data
+        level: Advanced
+        keywords: "XML/TEI, RDF, Protégé, Linked Open Data, MSSQL, MySQL, Labeled Data"
+
+      - name: Design and Media
+        level: Advanced
+        keywords: "Figma, Adobe Creative Suite, Blender, Cinema 4D, Data Visualization, Exhibition Design"
+
+    Interests:
+      - name: Research Interests
+        keywords: "Digital Humanities, Artificial Intelligence, Media Aesthetics, Art, Korean Literature, Human–AI Collaboration"
