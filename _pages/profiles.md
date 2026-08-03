@@ -3,7 +3,7 @@ layout: profiles
 permalink: /background/
 title: background
 description: Education and creative background.
-nav: true
+nav: false
 nav_order: 7
 
 profiles:

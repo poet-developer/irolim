@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
+title: RAG-Based Poetry Generation in Korean Modern Poetry
+description: Application of KPoEM , 2024-2026, RKS issued
 img: assets/img/3.jpg
 importance: 2
 category: work

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 7
-description: with background image
+title: Co-Reading with AI
+description: Color Visualization of Emotion Data in Korean Modern Poetry, Master Thesis, 2026
 img: assets/img/4.jpg
 importance: 1
 category: work

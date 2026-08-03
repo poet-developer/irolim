@@ -1,6 +1,6 @@
 ---
-title: "Gallery: BKKSG"
+title: "My Gallery"
 permalink: https://bkksg.com
 nav: true
-nav_order: 1
+nav_order: 7
 ---
