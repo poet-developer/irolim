@@ -2,7 +2,7 @@
 layout: page
 title: DH2026 Symbol & Website
 description: another without an image
-img:
+img: assets/img/DH2026_logo_heder_.jpg
 importance: 3
 category: fun
 ---
