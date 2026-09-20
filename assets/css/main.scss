@@ -22,6 +22,48 @@
 @use "teachings";
 @use "typograms";
 
+// Site-wide accent color for links, navigation states, buttons, and badges.
+:root,
+html[data-theme="light"],
+html[data-theme="dark"] {
+  --global-theme-color: rgb(65, 106, 225);
+  --global-hover-color: rgb(65, 106, 225);
+}
+
+// About-page name and section labels.
+.post:has(.about-content) .post-title,
+.about-content h2,
+.post:has(.about-content) h2:has(a[href$="/news/"]) {
+  color: rgb(65, 106, 225);
+  font-weight: 400;
+}
+
+.about-content h2,
+.post:has(.about-content) h2:has(a[href$="/news/"]) {
+  font-size: 1.5rem;
+}
+
+.post:has(.about-content) .post-title {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.post:has(.about-content) .post-title {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+
+.post:has(.about-content) .post-title .about-logo-link {
+  display: block;
+  width: 3.024em;
+  height: 0.8em;
+  background: url("{{ '/assets/img/LOGO_BKKSG.svg' | relative_url }}") left center / contain no-repeat;
+  flex: 0 0 auto;
+}
+
 // Preserve the current mobile typography while improving desktop readability.
 @media (min-width: 992px) {
   html {
@@ -40,18 +82,53 @@
   }
 
   .category {
-    margin: 3rem 0 1.5rem;
+    margin: 1.5rem 0 1.5rem 0;
     border-bottom: 1px solid var(--global-divider-color);
-    font-size: clamp(1.65rem, 4vw, 2.35rem);
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 400;
     line-height: 0.82;
     letter-spacing: -0.06em;
+    text-align: left;
   }
 
   .category span {
     display: inline-block;
+    font-weight: 100;
     padding-bottom: 0.45rem;
   }
+
+  .category.no-divider {
+    margin-bottom: 0.75rem;
+    border-bottom: 0;
+  }
+
+  .category.no-divider span {
+    padding-bottom: 0.225rem;
+  }
+}
+
+.publications .project-category-heading .category {
+  font-size: 1.5rem;
+}
+
+.publications h2.bibliography {
+  margin-top: 0;
+}
+
+// Match project card titles to publication entry title sizing.
+.projects .card-title {
+  font-size: 1rem;
+}
+
+// Increase publication year-divider contrast by darkening its gray by 30%.
+.publications h2.year {
+  border-top-color: color-mix(in srgb, var(--global-divider-color) 70%, black 30%);
+  color: color-mix(in srgb, var(--global-divider-color) 70%, black 30%);
+}
+
+html[data-theme="dark"] .publications h2.year {
+  border-top-color: color-mix(in srgb, var(--global-divider-color) 70%, white 30%);
+  color: color-mix(in srgb, var(--global-divider-color) 70%, white 30%);
 }
 
 .news-pager {
