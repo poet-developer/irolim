@@ -1,0 +1,26 @@
+{% capture project_card %}
+  {% if include.horizontal %}
+    {% include projects_horizontal.liquid %}
+  {% else %}
+    {% include projects.liquid %}
+  {% endif %}
+{% endcapture %}
+{% if project.research_status == 'completed' or project.research_status == 'in_progress' %}
+  {% if project.research_status == 'completed' %}
+    {% assign status_label = 'Completed' %}
+  {% else %}
+    {% assign status_label = 'In progress' %}
+  {% endif %}
+  {% capture card_body_with_status %}
+    <div class="card-body">
+      <span class="project-status{% if project.img and project.img != '' %} project-status-overlay{% endif %}" aria-label="Project {{ status_label | downcase }}">
+        <span class="project-status-dot" aria-hidden="true"></span>{{ status_label }}
+        {% if project.research_years %}
+          <span aria-hidden="true">·</span><span>{{ project.research_years | escape }}</span>
+        {% endif %}
+      </span>
+  {% endcapture %}
+  {{ project_card | replace_first: '<div class="card-body">', card_body_with_status }}
+{% else %}
+  {{ project_card }}
+{% endif %}

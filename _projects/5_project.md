@@ -1,10 +1,11 @@
 ---
 layout: page
 title: AKS Symbol
-description: a project with a background image
+description: ""
 img: assets/img/1.jpg
 importance: 3
 category: fun
+research_status: completed
 ---
 
 Every project has a beautiful feature showcase page.

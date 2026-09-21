@@ -1,10 +1,11 @@
 ---
 layout: page
 title: BKKSG
-description: My Art gallery Fullstack Development
+description: ""
 img:
-importance: 4
+importance: 5
 category: fun
+research_status: completed
 ---
 
 Every project has a beautiful feature showcase page.
