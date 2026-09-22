@@ -1,11 +1,12 @@
 ---
 layout: page
-title: AKS Symbol
+title: Academies of Korean S Symbol
 description: ""
 img: assets/img/1.jpg
 importance: 3
 category: fun
 research_status: completed
+research_years : "2024"
 ---
 
 Every project has a beautiful feature showcase page.

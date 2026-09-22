@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Co-Reading with AI
-description: ""
+description: "Master’s Thesis · Color Visualization of Emotion Data in Korean Modern Poetry"
 img:
 importance: 1
 category: work
@@ -9,6 +9,33 @@ research_status: completed
 research_years: "2024-2026"
 related_publications: false
 _styles: |
+  .co-reading-interface-link {
+    display: inline-block;
+    padding: 0.65rem 1rem;
+    border: 2px solid var(--global-theme-color);
+    border-radius: 0.5rem;
+    color: var(--global-theme-color);
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .co-reading-interface-link:hover,
+  .co-reading-interface-link:focus-visible {
+    background: var(--global-theme-color);
+    color: #fff;
+    text-decoration: none;
+  }
+  .co-reading-figure {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .co-reading-figure img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .co-reading-figure figcaption {
+    text-align: center;
+  }
   .co-reading-tag {
     display: inline-flex;
     align-items: center;
@@ -31,7 +58,12 @@ _styles: |
 
 I independently developed the KCoEM dataset, emotion-to-color transformation algorithm, Co-Reading framework, and web interface. The research builds on the KPoEM dataset and emotion classification model developed collaboratively with Haein Ji and Byungjun Kim.
 
-[Read the thesis]({{ '/assets/pdf/M-A-Thesis.pdf' | relative_url }}) · [Explore the interface](https://poet-developer.github.io/KPoEMInterface/) · [Co-Reading code](https://github.com/poet-developer/Co-Reading) · [Interface code](https://github.com/poet-developer/KPoEMInterface)
+<p style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+  <a class="co-reading-interface-link" href="https://poet-developer.github.io/KPoEMInterface/">Explore the interface · 한국어 →</a>
+  <a class="co-reading-interface-link" href="https://poet-developer.github.io/KI_en/">Explore the interface · English →</a>
+</p>
+
+[📄Read the thesis]({{ '/assets/pdf/M-A-Thesis.pdf' | relative_url }}) · [📂Co-Reading code](https://github.com/poet-developer/Co-Reading) · [📡Interface code](https://github.com/poet-developer/KPoEMInterface)
 
 ## Author’s Note
 
@@ -56,6 +88,11 @@ Ultimately, this study experimentally implements a digital environment in which 
 The thesis asks two connected questions: **Can AI participate as a co-reader of literature? How can poetic emotion and imagery be visualized?** These questions place the reader’s interpretive experience at the center of the system’s design.
 
 Drawing on reader-response theory, the thesis understands meaning as something realized through the encounter between a text and its reader. Poetry is especially suited to this inquiry because its metaphors, ambiguities, and sensory associations sustain multiple readings. A computational interpretation becomes another perspective that a human reader can engage with, reconsider, or contest.
+
+<figure class="co-reading-figure">
+  <img src="{{ '/assets/img/research/communication.png' | relative_url }}" alt="Communication structure connecting human-annotated emotion data and AI contextual interpretation through emotion–color visualization and a web interface." loading="lazy" style="display: block; width: 100%; max-width: 500px; height: auto; margin-left: auto; margin-right: auto;">
+  <figcaption>Figure 1. The Co-Reading communication structure: human annotations and AI contextual interpretation meet in color visualization, returning to the reader through the interface.</figcaption>
+</figure>
 
 ### LENS 01 : Datasets as Environmental Media
 
@@ -94,6 +131,11 @@ KCoEM makes the cultural and interpretive basis of color selection explicit. Its
 
 ### System : The Co-Reading Pipeline
 
+<figure class="co-reading-figure">
+  <img src="{{ '/assets/img/research/co-reading%20pipeline.png' | relative_url }}" alt="Co-Reading pipeline for transforming poetic emotion and contextual interpretation into color." loading="lazy" style="display: block; width: 100%; max-width: 500px; height: auto; margin-left: auto; margin-right: auto;">
+  <figcaption>Figure 2. The Co-Reading pipeline for poetry–emotion–color transformation.</figcaption>
+</figure>
+
 The same poem enters two coordinated paths. The [KPoEM emotion classifier](https://doi.org/10.57967/hf/6301) identifies primary and secondary emotions, while an LLM interprets the poem’s context through a constrained vocabulary of image adjectives. The transformation algorithm combines these outputs.
 
 | Step | Process | Interpretive function |
@@ -109,6 +151,17 @@ For example, the thesis follows an excerpt from Shin Seok-jeong’s *Ne nunmangu
 ## Interface : Three Reading Environments
 
 The web prototype brings **close reading, distant reading, and Co-Reading** into a shared interface. Each mode offers a different way of encountering the same literary material.
+
+<p style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+  <a class="co-reading-interface-link" href="https://poet-developer.github.io/KPoEMInterface/">Explore the interface · 한국어 →</a>
+  <a class="co-reading-interface-link" href="https://poet-developer.github.io/KI_en/">Explore the interface · English →</a>
+</p>
+
+<figure class="co-reading-figure">
+  <img src="{{ '/assets/img/research/kpoem_interface.png' | relative_url }}" alt="Backend data processing and AI inference connected to frontend close reading, distant reading, and Co-Reading interfaces." loading="lazy" style="display: block; width: 100%; max-width: 500px; height: auto; margin-left: auto; margin-right: auto;">
+  <figcaption>Figure 3. System architecture of the KPoEM web interface, connecting data processing and AI inference with three reading environments.</figcaption>
+</figure>
+
 
 | Reading mode | Interface experience | Emphasis |
 | --- | --- | --- |

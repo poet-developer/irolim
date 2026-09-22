@@ -2,7 +2,6 @@
 layout: page
 title: KPoEM Dataset & Emotion Classification Model
 description: "Emotion Annotation · Literary NLP · Emotion Classification · Dataset Development · Computational Literary Studies"
-img: assets/img/12.jpg
 importance: 3
 category: work
 research_status: completed
@@ -14,7 +13,7 @@ KPoEM (Korean Poetry Emotion Mapping) combines an expert-annotated dataset of mo
 
 I am the first author of this research, co-authored with Haein Ji and Byungjun Kim. The project connects literary annotation with natural language processing to support quantitative analysis of poetic emotion.
 
-[Read the paper]({{ '/assets/pdf/RKS.pdf' | relative_url }}) · [Dataset](https://doi.org/10.57967/hf/6303) · [Model](https://doi.org/10.57967/hf/6301) · [Code](https://github.com/AKS-DHLAB/KPoEM)
+[📄Read the paper]({{ '/assets/pdf/RKS.pdf' | relative_url }}) · [📁Dataset](https://doi.org/10.57967/hf/6303) · [📁Model](https://doi.org/10.57967/hf/6301) · [📁Code](https://github.com/AKS-DHLAB/KPoEM)
 
 ## Building the KPoEM Dataset
 

@@ -1,12 +1,13 @@
 ---
 layout: page
 title: Exhibition Planning & Design Intern for SAHNG-UP GALLERY | CROSSING ONE
-description: <strong>Visual Identity · Exhibition Branding · Graphic Design · Marketing Communication</strong>
+description: Visual Identity · Exhibition Branding · Graphic Design · Marketing Communication
 
 img: assets/img/exhibition/crossing0.png
 importance: 4
 category: fun
 research_status: completed
+research_years: "2023"
 ---
 
 June 15 – July 22, 2023 · H.art1, Euljiro, Seoul

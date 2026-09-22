@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Exhibition Planning & Design | Art Seoul★2025
-description: <strong>Large-Scale Exhibition Planning · Visual Design · Artist Communication</strong>
-
+description: Art Fair Exhibition Planning · Visual Design · Artist Communication
 img: assets/img/exhibition/ARTSEOUL1.jpeg
 importance: 4
 category: fun
 research_status: completed
+research_years: "2024"
 ---
 
 I participated in the exhibition planning and design for the art fair Art Seoul★ 2025, held from March 20 to April 2, 2025, at Exhibition Halls 6 and 7 of the Hangaram Art Museum, Seoul Arts Center, Seocho, Seoul.

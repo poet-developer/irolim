@@ -11,6 +11,13 @@ _styles: |
   .projects .card {
     position: relative;
   }
+  .projects .card-img-top {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center top;
+  }
   .projects .project-status {
     display: inline-flex;
     align-items: center;
@@ -45,6 +52,8 @@ _styles: |
 
 <!-- pages/projects.md -->
 <div class="projects">
+{% comment %}Temporarily hide AKS Symbol from the listing while keeping its source and page.{% endcomment %}
+{% assign visible_projects = site.projects | where_exp: "project", "project.path != '_projects/5_project.md'" %}
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
   {% for category in page.display_categories %}
@@ -59,7 +68,7 @@ _styles: |
       {% endif %}
     </h2>
   </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
+  {% assign categorized_projects = visible_projects | where: "category", category %}
   {% assign sorted_projects = categorized_projects | sort: "importance" %}
   <!-- Generate cards for each project -->
   {% if page.horizontal %}
@@ -83,7 +92,7 @@ _styles: |
 
 <!-- Display projects without categories -->
 
-{% assign sorted_projects = site.projects | sort: "importance" %}
+{% assign sorted_projects = visible_projects | sort: "importance" %}
 
   <!-- Generate cards for each project -->
 

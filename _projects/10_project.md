@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Exhibition Planning & Design for Hongik Art | WORLD ART EXPO 2025
-description: <strong>Booth Exhibition Planning · Exhibition Design · Artist Communication</strong>
-
-img: assets/img/exhibition/coex1.jpeg
+description: Booth Exhibition Planning · Exhibition Design · Artist Communication
+img: assets/img/exhibition/coex1.jpg
 importance: 4
 category: fun
 research_status: completed
+research_years: "2024-2025"
 ---
 
 I participated in the planning and design of two booth exhibitions — the IAA Award-Winning Artists Exhibition and the Hongik Sehwa Exhibition — at WORLD ART EXPO 2025, held at COEX Hall C in Gangnam, Seoul, from January 16 to 19, 2025.

@@ -1,81 +1,38 @@
 ---
 layout: page
-title: DH2026 Symbol & Website
-description: ""
+title: DH2026 Symbol & Website Design
+description: "Visual Identity · Symbol & Logotype · Website Design"
 img: assets/img/DH2026_logo_heder_.jpg
 importance: 3
 category: fun
 research_status: completed
+research_years: "2026"
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<p>The DH2026 visual identity brings together motifs from Daejeon, Korean culture, and Digital Humanities under the theme of <strong>Engagement</strong>. Its symbol and logotype express a shared commitment to global collaboration, cultural diversity, and practical solidarity.</p>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+<p><a href="https://dh2026.adho.org/" target="_blank" rel="noopener">Visit the DH2026 website</a></p>
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+<h2>Symbol Mark: Engagement</h2>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+<p>The symbol centers on <strong>Hanbit Tower</strong>, a landmark in Daejeon Expo Science Park beside the conference venue. It connects the identity to the host city while evoking knowledge, creativity, and the future of Digital Humanities.</p>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+<p>The surrounding curve draws inspiration from <strong>Sangmo Nori</strong>, the spinning ribbon hats used in traditional Korean farmers' music performances. Its flowing movement represents harmony, lively exchange, and collaboration across disciplines.</p>
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+<p>Inspired by <strong>Hanbok</strong>, the gradient blends yellow, blue, green, and pink to express hope, harmony, and openness to cultural and disciplinary diversity. A dark green base reflects an affinity with nature in traditional Korean color aesthetics.</p>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+<h2>Logotype</h2>
 
-{% raw %}
+<p>Based on Google's <strong>Noto Sans</strong>, the logotype pairs a modern sans-serif form with clear readability. Designed to complement the symbol mark, it provides a consistent, recognizable identity across international and multilingual media.</p>
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+<h2>Logo & Style Guide</h2>
 
-{% endraw %}
+<iframe
+  src="{{ '/assets/img/studio/DH2026_logo_guide.pdf' | relative_url }}"
+  title="DH2026 logo and style guide"
+  width="100%"
+  height="800"
+  style="display: block; height: 80vh; border: 0;"
+></iframe>
+
+<p><a href="{{ '/assets/img/studio/DH2026_logo_guide.pdf' | relative_url }}" target="_blank" rel="noopener">Open logo & style guide (PDF)</a></p>

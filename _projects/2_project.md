@@ -2,7 +2,6 @@
 layout: page
 title: RAG-Based Poetry Generation in Korean Modern Poetry
 description: "Retrieval Augmented Generation (RAG) · Poetry Generation · AI creation"
-img: ""
 importance: 2
 category: work
 research_status: completed
@@ -14,7 +13,7 @@ This project explores how Retrieval-Augmented Generation (RAG) can support Korea
 
 I am the first author of this research, co-authored with Haein Ji and Byungjun Kim. The project connects structured literary data with generative AI, using expert-annotated poetic emotions to guide retrieval and prompt construction.
 
-[Read the paper]({{ '/assets/pdf/RKS.pdf' | relative_url }}) · [Dataset](https://doi.org/10.57967/hf/6303) · [Emotion Classification Model](https://doi.org/10.57967/hf/6301) · [Code](https://github.com/AKS-DHLAB/KPoEM)
+[📄Read the paper]({{ '/assets/pdf/RKS.pdf' | relative_url }}) · [📁Dataset](https://doi.org/10.57967/hf/6303) · [📁Emotion Classification Model](https://doi.org/10.57967/hf/6301) · [📁Code](https://github.com/AKS-DHLAB/KPoEM)
 
 ## Emotion-Aware Poetry Generation
 
