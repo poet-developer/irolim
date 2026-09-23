@@ -65,6 +65,12 @@ I independently developed the KCoEM dataset, emotion-to-color transformation alg
 
 [📄Read the thesis]({{ '/assets/pdf/M-A-Thesis.pdf' | relative_url }}) · [📂Co-Reading code](https://github.com/poet-developer/Co-Reading) · [📡Interface code](https://github.com/poet-developer/KPoEMInterface)
 
+## Thesis Committee
+
+- **Committee Chair:** [Professor Dongsoo Suh](https://hicoda.hongik.ac.kr/post-professors/%EC%84%9C%EB%8F%99%EC%A3%BC/) (서동수)
+- **Committee Member:** [Professor Baro Kim](https://digitalhumanities.kr/members/Baro.html) (김바로)
+- **Thesis Advisor:** [Professor Byungjun Kim](https://digitalhumanities.kr/members/Byungjun.html) (김병준)
+
 ## Author’s Note
 
 Much research on generative AI and creativity has focused on what machines can produce, leaving human experience, context, and interpretive agency at the margins. Through Co-Reading, I explore how humans and AI can inhabit a shared environment for reading and making meaning. By translating emotions in modern Korean poetry into color and bringing close reading, distant reading, and Co-Reading into an interface, this project experiments with ways to expand the experience of literary interpretation. I see the human task in the age of AI as designing environments in which we actively participate in interpretation and the construction of new meanings. Co-Reading is an experimental model for this coexistence, open to further refinement and to the development of interface-based data visualization as a field of aesthetic and media inquiry.
