@@ -48,6 +48,59 @@ _styles: |
     font-size: 0.8rem;
     letter-spacing: 0.04em;
   }
+  .co-reading-case {
+    margin: 3.5rem 0 1.5rem;
+    padding: 1.75rem clamp(1rem, 4vw, 2rem);
+    border: 1px solid var(--global-divider-color);
+    border-top: 6px solid #8bc4a6;
+    border-radius: 0 0 0.75rem 0.75rem;
+    background: var(--global-card-bg-color);
+  }
+  .co-reading-case--warm {
+    border-top-color: #c8857d;
+  }
+  .co-reading-case-label {
+    margin: 0 0 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .co-reading-case h4 {
+    margin: 0 0 0.5rem;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 700;
+    line-height: 1.25;
+  }
+  .co-reading-case-author {
+    margin: 0 0 1.25rem;
+  }
+  .co-reading-case-route {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 0.75rem;
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .co-reading-case-swatch {
+    display: inline-block;
+    width: 3rem;
+    height: 1rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 999px;
+    background: linear-gradient(to right, #4e6663 60%, #8bc4a6 60%);
+  }
+  .co-reading-case--warm .co-reading-case-swatch {
+    background: linear-gradient(to right, #ffe2aa 60%, #c8857d 60%);
+  }
+  .co-reading-case--deep {
+    border-top-color: #571923;
+  }
+  .co-reading-case--deep .co-reading-case-swatch {
+    background: linear-gradient(to right, #571923 60%, #a18f89 60%);
+  }
 ---
 
 <div class="co-reading-tag" title="Reading together — 함께 읽기, written as it sounds in Korean">
@@ -126,16 +179,14 @@ Co-Reading develops these relationships through a **two-color palette**. Pairing
 
 The interface is **a mediating space in which interpretation takes place**. Drawing on Drucker and Manovich, the thesis understands its arrangement and interactions as conditions that shape how readers encounter data and construct meaning. Co-Reading brings textual detail, emotional patterns, and color palettes into a shared environment, inviting readers to move between computational perspectives and their own sensory interpretations. Humanistic data visualization thus becomes an environment for experiencing and reconsidering meaning (pp. 5–6, 81–82, 97).
 
-### Environmental Media : Two Complementary Datasets
+### Environmental Media : Construction Two Complementary Datasets
 
 | Resource | Role in Co-Reading | Access |
 | --- | --- | --- |
-| **KPoEM — Korean Poetry Emotion Mapping** | Expert annotations preserve multiple emotional readings of poetic lines and works. The dataset provides the foundation for the poetry-specific emotion classifier. | [Dataset DOI](https://doi.org/10.57967/hf/6303) · [Zenodo archive](https://zenodo.org/records/15598092) |
-| **KCoEM — Korean Color Emotion Mapping** | A collection of 348 color records structures emotion–color associations from existing psychological experiments, Korean color literature, and color–emotion models, organized in relation to the KOTE emotion taxonomy. | [Thesis dataset DOI](https://doi.org/10.5281/zenodo.21131097)|
+| **KPoEM — Korean Poetry Emotion Mapping** | The dataset contains 7,622 entries with expert annotations that preserve multiple emotional readings of poetic lines and works. It provides the foundation for the poetry-specific emotion classifier. | [Dataset DOI](https://doi.org/10.57967/hf/6303) · [Zenodo archive](https://zenodo.org/records/15598092) |
+| **KCoEM — Korean Color Emotion Mapping** | A collection of 348 color records structures emotion–color associations from existing psychological experiments, Korean color literature, and color–emotion models, organized in relation to the KOTE emotion taxonomy. | [DOI Dataset](https://doi.org/10.5281/zenodo.21131097)|
 
-KCoEM makes the cultural and interpretive basis of color selection explicit. Its associations provide a situated resource for visual interpretation; the thesis also recognizes that some emotion categories have limited correspondence and that mappings incorporate human judgment.
-
-### System : The Co-Reading Pipeline
+### System Development : The Co-Reading Pipeline
 
 <figure class="co-reading-figure">
   <img src="{{ '/assets/img/research/co-reading%20pipeline.png' | relative_url }}" alt="Co-Reading pipeline for transforming poetic emotion and contextual interpretation into color." loading="lazy" style="display: block; width: 100%; max-width: 500px; height: auto; margin-left: auto; margin-right: auto;">
@@ -152,9 +203,137 @@ The same poem enters two coordinated paths. The [KPoEM emotion classifier](https
 | Tone adjustment | Preserve the selected hues while adjusting saturation and brightness using the adjective-associated palette data. | Give similar emotion categories different visual atmospheres according to context. |
 | Palette presentation | Display the resulting colors in a 6:4 area ratio. | Offer a sensory object that the reader can revisit alongside the poem. |
 
-For example, the thesis follows an excerpt from Shin Seok-jeong’s *Ne nunmangureseoneun* through the pipeline. Its primary and secondary emotions lead to blue-green and green hues; the contextual adjective then guides their brightness and saturation. The example shows how a palette combines structured rules with contextual interpretation.
+### Transformation : Poetry → Emotion → Color
 
-## Interface : Three Reading Environments
+<header class="co-reading-case">
+  <p class="co-reading-case-label">Case study 01 · Shin Seok-jeong</p>
+  <h4>In Your Eyes</h4>
+  <p class="co-reading-case-author"><span lang="ko">신석정 · 네 눈망울에서는</span></p>
+  <p class="co-reading-case-route"><span>Poetry</span><span aria-hidden="true">→</span><span>Pleased + Joy</span><span aria-hidden="true">→</span><span class="co-reading-case-swatch" aria-hidden="true"></span><span>Blue-green + Green</span></p>
+</header>
+
+The thesis follows an excerpt from Shin Seok-jeong’s *In Your Eyes* (네 눈망울에서는) through the pipeline. Its primary and secondary emotions lead to blue-green and green hues; the contextual adjective then guides their brightness and saturation. The example shows how a palette combines structured rules with contextual interpretation.
+
+**Poetic input and contextual interpretation**
+
+| Input poem excerpt (English translation) | AI-generated image adjective |
+| --- | --- |
+| From your eyes comes the scent<br>of green May<br>and white wild roses.<br><br>Your bright, shining eyes<br>hold within them<br>the stories of the stars. | Pure |
+
+**Emotion classification results (Primary emotion / Secondary emotion)**
+
+| Rank | Emotion | Score |
+| --- | --- | --- |
+| 1 | Pleased (Cute / Pretty) | 0.97 |
+| 2 | Joy | 0.89 |
+
+**Emotion-to-color mapping**
+
+| Role | Selected emotion | Base hue |
+| --- | --- | --- |
+| Primary | Pleased (Cute / Pretty) | Blue Green |
+| Secondary | Joy | Green |
+
+<figure class="co-reading-figure" aria-label="Illustrative two-color palette: a muted blue-green primary color and a soft green secondary color, shown in a six-to-four ratio.">
+  <div style="display: grid; grid-template-columns: 3fr 2fr; max-width: 640px; margin: 1.5rem auto 0.75rem; gap: 0.4rem 0;">
+    <div>Primary color · Blue-green</div>
+    <div>Secondary color · Green</div>
+    <div style="height: 140px; background-color: #cbd8d7ff;" aria-hidden="true"></div>
+    <div style="height: 140px; background-color: #e0f9ecff;" aria-hidden="true"></div>
+  </div>
+  <figcaption>Figure 3. “Pure,” combining Pleased (Cute / Pretty) and Joy. Values and colors are placeholders pending verification.</figcaption>
+</figure>
+
+In addition to “Pure,” the LLM also selected “Sensuous” during image-adjective selection. Even with the same blue-green and green base hues, these different interpretations can lead to different brightness and saturation adjustments, producing palettes with distinct sensory atmospheres. In Co-Reading, the AI’s interpretation of the poetic text thus serves as a central mediator in dynamically composing the color palette.
+
+<figure class="co-reading-figure" aria-label="Illustrative Sensuous two-color palette: a dark muted blue-green primary color and a soft green secondary color, shown in a six-to-four ratio.">
+  <div style="display: grid; grid-template-columns: 3fr 2fr; max-width: 640px; margin: 1.5rem auto 0.75rem; gap: 0.4rem 0;">
+    <div>Primary color · Blue-green</div>
+    <div>Secondary color · Green</div>
+    <div style="height: 140px; background-color: #4e6663ff;" aria-hidden="true"></div>
+    <div style="height: 140px; background-color: #8bc4a6ff;" aria-hidden="true"></div>
+  </div>
+  <figcaption>Figure 4. “Sensuous,” combining Pleased (Cute / Pretty) and Joy. Values and colors are placeholders pending verification.</figcaption>
+</figure>
+
+<header class="co-reading-case co-reading-case--warm">
+  <p class="co-reading-case-label">Case study 02 · Baek Seok</p>
+  <h4>Me, Natasha, and the White Donkey</h4>
+  <p class="co-reading-case-author"><span lang="ko">백석 · 나와 나타샤와 흰 당나귀</span></p>
+  <p class="co-reading-case-route"><span>Poetry</span><span aria-hidden="true">→</span><span>Pleased + Caring</span><span aria-hidden="true">→</span><span class="co-reading-case-swatch" aria-hidden="true"></span><span>Orange + Red</span></p>
+</header>
+
+**Poetic input and contextual interpretation**
+
+| Input poem excerpt (English translation) | AI-generated image adjective |
+| --- | --- |
+| Snow falls thick and deep.<br> Beautiful Natasha loves me,<br> and somewhere a white donkey, delighted by tonight, will bray aloud.| Lovely |
+
+**Emotion classification results (Primary emotion / Secondary emotion)**
+
+| Rank | Emotion | Score |
+| --- | --- | --- |
+| 1 | Pleased (Cute / Pretty) | 0.95 |
+| 2 | Caring | 0.93 |
+
+**Emotion-to-color mapping**
+
+| Role | Selected emotion | Base hue |
+| --- | --- | --- |
+| Primary | Pleased (Cute / Pretty) | Orange |
+| Secondary | Caring | Red |
+
+<figure class="co-reading-figure" aria-label="Two-color palette: a pale warm orange primary color and a muted red secondary color, shown in a six-to-four ratio.">
+  <div style="display: grid; grid-template-columns: 3fr 2fr; max-width: 640px; margin: 1.5rem auto 0.75rem; gap: 0.4rem 0;">
+    <div>Primary color · Orange</div>
+    <div>Secondary color · Red</div>
+    <div style="height: 140px; background-color: #ffe2aa;" aria-hidden="true"></div>
+    <div style="height: 140px; background-color: #c8857d;" aria-hidden="true"></div>
+  </div>
+  <figcaption>Two-color palette conversion: “lovely,” combining Pleased (Cute / Pretty) and caring. Colors are approximated from the reference image.</figcaption>
+</figure>
+
+<header class="co-reading-case co-reading-case--deep">
+  <p class="co-reading-case-label">Case study 03 · Kim Su-yeong</p>
+  <h4>The Blue Sky</h4>
+  <p class="co-reading-case-author"><span lang="ko">김수영 · 푸른 하늘을</span></p>
+  <p class="co-reading-case-route"><span>Poetry</span><span aria-hidden="true">→</span><span>Regret / Disappointment + Sadness</span><span aria-hidden="true">→</span><span class="co-reading-case-swatch" aria-hidden="true"></span><span>Red + Orange</span></p>
+</header>
+
+**Poetic input and contextual interpretation**
+
+| Input poem excerpt (English translation) | AI-generated image adjective |
+| --- | --- |
+| Anyone who has ever taken flight<br>
+for freedom will know.<br>what the skylark sees <br>when it sings,<br>why the scent of blood<br>is mingled with freedom,<br>and why revolution<br>is a lonely thing. | Deep (깊은) |
+
+*English translation prepared for this example from the Korean excerpt in the reference table.*
+
+**Emotion classification results (Primary emotion / Secondary emotion)**
+
+| Rank | Emotion | Score |
+| --- | --- | --- |
+| 1 | pitifulness/disappointment (안타까움 / 실망) | 0.94 |
+| 2 | Sadness (슬픔) | 0.88 |
+
+**Emotion-to-color mapping**
+
+| Role | Selected emotion | Base hue |
+| --- | --- | --- |
+| Primary | pitifulness/disappointmen | Red |
+| Secondary | Sadness | Orange |
+
+<figure class="co-reading-figure" aria-label="Two-color palette: a dark burgundy primary color and a muted grayish orange secondary color, shown in a six-to-four ratio.">
+  <div style="display: grid; grid-template-columns: 3fr 2fr; max-width: 640px; margin: 1.5rem auto 0.75rem; gap: 0.4rem 0;">
+    <div>Primary color · Red</div>
+    <div>Secondary color · Orange</div>
+    <div style="height: 140px; background-color: #571923;" aria-hidden="true"></div>
+    <div style="height: 140px; background-color: #a18f89;" aria-hidden="true"></div>
+  </div>
+  <figcaption>Two-color palette conversion: “Deep,” combining Regret / pitifulness/disappointmen. Emotion scores and base hues follow the reference table; colors are approximated from its palette.</figcaption>
+</figure>
+
+## Interface Application : Three Reading Environments
 
 The web prototype brings **close reading, distant reading, and Co-Reading** into a shared interface. Each mode offers a different way of encountering the same literary material.
 
@@ -165,7 +344,7 @@ The web prototype brings **close reading, distant reading, and Co-Reading** into
 
 <figure class="co-reading-figure">
   <img src="{{ '/assets/img/research/kpoem_interface.png' | relative_url }}" alt="Backend data processing and AI inference connected to frontend close reading, distant reading, and Co-Reading interfaces." loading="lazy" style="display: block; width: 100%; max-width: 500px; height: auto; margin-left: auto; margin-right: auto;">
-  <figcaption>Figure 3. System architecture of the KPoEM web interface, connecting data processing and AI inference with three reading environments.</figcaption>
+  <figcaption>Figure 5. System architecture of the KPoEM web interface, connecting data processing and AI inference with three reading environments.</figcaption>
 </figure>
 
 
@@ -179,11 +358,11 @@ The thesis presents a static web prototype that demonstrates these reading modes
 
 ## Contribution and Reflection
 
-The project’s contribution is a working design for **visualization as a communicative environment**. Dataset construction, classification, color transformation, and interface design form one interpretive system. Its value lies in making the relationships among these choices available to literary experience.
+The project transforms human emotion data into **environmental media for sensory experience**. By translating poetic emotions into color, it invites readers to experience poetry through both reading and seeing, opening a cross-sensory dimension of literary reception. The dataset becomes a visual medium through which human interpretations can be encountered and reconsidered.
 
-The thesis connects this transformation to *postwriting*: poetic language is reorganized into data and visual form, and the reader’s engagement with that form becomes a further act of interpretation. Reading and making become linked through the reconstruction of an existing text across media.
+The web interface brings this perspective into practice by integrating close reading, distant reading, and Co-Reading. It frames **visualization as a condition for interpretation**, allowing readers to experience how meaning takes shape through interactions among texts, datasets, humans, and AI. Within this environment, AI takes the role of a **co-reader**, participating in the construction of meaning. Co-Reading can thus be understood as a form of *postwriting*: literary texts are reconfigured across data and visual media, and further meanings emerge through readers’ engagement.
 
-The completed research establishes this conceptual framework, algorithm, and prototype. It also identifies limits: the poetry corpus covers a restricted group of poets, emotion–color mappings are uneven and culturally situated, and the interface itself directs attention. Further user studies are needed to evaluate how these interactions affect interpretation. These questions remain part of the project’s philosophical commitment to examining the conditions under which humans and AI read together.
+The framework could extend to fiction, essays, and other cultural texts through connections with different language models and external data resources. Its current scope remains limited by the poetry corpus, culturally situated emotion–color mappings, and the interface’s influence on attention. Further user studies are needed to examine how this shared interpretive environment shapes literary experience.
 
 ## Note
 
