@@ -34,6 +34,10 @@ _styles: |
     letter-spacing: 0.09em;
     text-transform: uppercase;
   }
+  .projects .project-status span {
+    color: inherit;
+    -webkit-text-fill-color: currentColor;
+  }
   .projects .project-status-overlay {
     position: absolute;
     top: 0.75rem;
