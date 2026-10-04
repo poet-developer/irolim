@@ -3,36 +3,205 @@ cv:
   label: Computational Media Researcher, Poet, and Developer
   location: Republic of Korea
   image: ""
-  summary: Computational media researcher working across digital humanities, artificial intelligence, Korean literature, media aesthetics, and art.
+  summary: >-
+    I design interactive systems as environments in which people interpret cultural works and make meaning with artificial intelligence.
+    My research connects human–computer interaction, media aesthetics, AI, art, and digital humanities, examining how datasets, models, and interfaces shape interpretation.
 
   social_networks:
     - network: GitHub
       username: poet-developer
 
   sections:
+    Interests:
+      - keywords: "Human–Computer Interaction, Media Aesthetics, Artificial Intelligence, Art, Digital Humanities"
+
     Education:
       - institution: The Academy of Korean Studies
-        location: Seongnam, Republic of Korea
         area: Cultural Informatics
-        studyType: M.A. Candidate
-        start_date: 2025
+        studyType: M.A.
+        start_date: 2024
         end_date: 2026
 
       - institution: Hongik University
-        location: Seoul, Republic of Korea
         area: Advertising and Public Relations
         studyType: B.B.A.
         start_date: 2014
         end_date: 2019
 
       - institution: Hongik University
-        location: Seoul, Republic of Korea
         area: Digital Media Design
         studyType: B.F.A.
         start_date: 2013
         end_date: 2019
 
+    Publications:
+      - title: "Co-Reading with AI: Color Visualization of Emotion Data in Korean Modern Poetry"
+        authors:
+          - I Ro Lim
+        publisher: The Academy of Korean Studies
+        releaseDate: 2026
+        url: https://www.riss.kr/search/detail/DetailView.do?p_mat_type=be54d9b8bc7cdb09&control_no=7c72357b996262a6ffe0bdc3ef48d419&keyword=%EC%9E%84%EC%9D%B4%EB%A1%9C
+        summary: "Iro Lim. M.A. thesis in Cultural Informatics. Advisor: Byungjun Kim."
+
+      - title: "KPoEM: A Human-Annotated Dataset for Emotion Classification and RAG-Based Poetry Generation in Korean Modern Poetry"
+        authors:
+          - I Ro Lim
+          - Haein Ji
+          - Byungjun Kim
+        publisher: The Review of Korean Studies, 29(1), 161–206
+        releaseDate: 2026
+        url: https://doi.org/10.25024/review.2026.29.1.006
+        summary: Iro Lim, Haein Ji, and Byungjun Kim. First-author journal article.
+
+      - title: 오늘도 꽃은 피어라 (Flowers Bloom, Still)
+        authors:
+          - 임이로
+        publisher: 선한능력
+        releaseDate: 2024
+        url: https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000010798546
+        summary: "Iro Lim (임이로). Poetry collection. Writing, design, artwork, and editing by Iro Lim. ISBN: 9791197382765."
+
+    Research and System Development:
+      - bullet: |
+          **Co-Reading — Research Lead and Developer**
+            2024–2026. Led an end-to-end master's research project investigating human–AI co-reading of Korean modern poetry, spanning human-annotated dataset construction, emotion classification modeling, emotion-to-color mapping, and interactive system design. Developed Co-Reading as an interpretive framework in which computational representations support, rather than replace, human interpretation; presented successive stages of the research at national and international conferences.
+
+      - bullet: |
+          **KPoEM Interface — Sole Author and Developer**
+            2026\. Designed and developed the interactive web system implementing the Co-Reading research framework. Integrated close reading, distant reading, and human–AI Co-Reading with emotion classification, color visualization, and interpretive interaction, translating the project's dataset, model, and emotion-to-color mapping into an interactive environment for poetry interpretation.
+            [Website](https://poet-developer.github.io/KPoEMInterface/)
+
+      - bullet: |
+          **AI Cultural Heritage Docent Web Prototype — Full Stack Developer**
+            2025–Present. Collaborative research with Songyi Jeong and Baro Kim. Developed a prototype combining cultural heritage knowledge and generative AI to produce explanations responsive to visitors' backgrounds and languages; presented at DH2026.
+
+      - bullet: |
+          **BKKSG — Creator and Full Stack Developer**
+            2023\. Independently led product planning, design, and full-stack development of an artwork portfolio platform.
+            [Website](https://bkksg.com)
+
+    Datasets and Models:
+      - bullet: |
+          **Co-Reading Module: Emotion-to-Color Transformation Algorithm**
+            2026\. Sole author and developer of the emotion-to-color transformation module for human–AI Co-Reading.
+            [Code](https://github.com/poet-developer/Co-Reading)
+
+      - bullet: |
+          **KPoEM (Korean Poetry Emotion Mapping) Dataset — Producer**
+            2025\. First author and producer of a human-annotated emotion dataset for Korean modern poetry, developed with Haein Ji, Seul Koo, J. Yun, S.-yi Jung, and Byungjun Kim at AKS-DHLAB.
+            [Hugging Face DOI](https://doi.org/10.57967/hf/6303) · [Zenodo](https://zenodo.org/records/15598092)
+
+      - bullet: |
+          **KCoEM (Korean Color Emotion Mapping) Dataset — Producer**
+            2025\. Sole producer of a Korean color–emotion mapping dataset.
+            [DOI](https://doi.org/10.5281/zenodo.17797747) · [Dataset record](https://zenodo.org/records/17797748)
+
+      - bullet: |
+          **KPoEM Emotion Classification Model — Producer**
+            2025\. First author and producer of an emotion classification model for Korean modern poetry, developed with Haein Ji and Byungjun Kim at AKS-DHLAB.
+            [Hugging Face DOI](https://doi.org/10.57967/hf/6301)
+
+      - bullet: |
+          **KNoTE (Korean Novel TEI Encoded) Dataset v4 — Annotator**
+            2026\. Annotator for a TEI-encoded Korean novel dataset.
+            [DOI](https://doi.org/10.5281/zenodo.19813475)
+
+    Awards:
+      - title: Humanities and Social Sciences Master's Student Research Grant
+        date: 2025-2026
+        awarder: National Research Foundation of Korea
+        summary: >-
+          Principal investigator, National Research Foundation of Korea; funded by the Ministry of Education of the Republic of Korea and NRF.
+          Selected among 100 researchers nationwide; research category: Affective Science and Applied Aesthetics.
+          Grant: NRF-2025S1A5B5A20019820.
+      - title: Research Scholarship
+        date: 2026
+        awarder: The Academy of Korean Studies
+
+      - title: Tuition Fee Exemption Scholarship
+        date: 2025
+        awarder: The Academy of Korean Studies
+      
+      - title: DH Awards 2025 Nominee — KPoEM Dataset
+        date: 2025
+        awarder: DH Awards
+        summary: The KPoEM Dataset was nominated for the DH Awards 2025.
+
+      - title: Silver Prize, Humanities Column Category
+        date: 2023
+        awarder: 5th Cosmian Awards
+
+      - title: Scholarship Recipient
+        awarder: Samsung Dream Scholarship Foundation
+
+    Selected Presentations:
+      - bullet: |
+          **Developing an AI Cultural Heritage Docent Web Prototype: Internalizing Institutional Guidelines for Responsible Curation**
+            2026-07-30. Co-first-author presentation with Songyi Jeong and Baro Kim at DH2026, Alliance of Digital Humanities Organizations (ADHO), Daejeon, Republic of Korea.
+            [DOI](https://doi.org/10.5281/zenodo.21803582) · [Program](https://dh2026.adho.org/)
+
+      - bullet: |
+          **KPoEM: Visualizing Emotion Data in Modern Korean Poetry through a Web-Based Interpretive Interface**
+            2026-07-29. The first-author presentation with Byungjun Kim as a co-author, at DH2026, Alliance of Digital Humanities Organizations (ADHO), Daejeon, Republic of Korea.
+            [DOI](https://doi.org/10.5281/zenodo.21779517) · [Program](https://dh2026.adho.org/)
+
+      - bullet: |
+          **Co-Reading: A Human–AI Co-Reader Media System for Poetry–Emotion–Color**
+            2026-01-23. The first-author poster presentation with Byungjun Kim as a co-author, at the HKADH 2026 Conference, Hong Kong Association for Digital Humanities, Hong Kong.
+            [Program](https://2026.hkadh.org/) · [DOI](https://doi.org/10.5281/zenodo.18753718)
+
+      - bullet: |
+          **데이터셋의 환경적 전환: 인공지능과 함께 읽기(Co-Reading)를 통한 한국 근현대 시–감정–색채 멀티모달 미디어**
+            2025-12-06. Sole-author presentation at the “Unfamiliar Boundaries of Film and Media, Mediating Research” Graduate Student Conference, Chung-Ang University Center for Cinema and Media Studies, Seoul.
+            [Program](https://cau-ccms.com/allpost/announce-ko/29-1/) · [DOI](https://doi.org/10.5281/zenodo.17850832)
+
+      - bullet: |
+          **한국 근현대시의 감정 분석과 인공지능 시 창작 응용: KPoEM 데이터셋 구축과 활용**
+            2025-10-18. The first-author presentation with Haein Ji and Byungjun Kim as co-authors at the 180th Conference of the Bangyo Language and Literature Society, Sungkyunkwan University, Seoul.
+            [Program](http://bangyo.or.kr/notice/view.asp?key=176&Page=1) · [DOI](https://doi.org/10.5281/zenodo.18752999)
+
+      - bullet: |
+          **Decoding the Poetic Language of Emotion in Korean Modern Poetry: Insights from a Human-Labeled Dataset and AI Modeling**
+            2025-04-25. The first-author presentation with Haein Ji and Byungjun Kim as co-authors at the Digital Humanities and Social Sciences Korea Conference, University of Pennsylvania, Philadelphia.
+            [Program](https://bkksg.com/project/165) · [DOI](https://doi.org/10.5281/zenodo.18752715)
+
+      - bullet: |
+          **Constructing an Emotion-Labeled Dataset of Modern Korean Poetry: A Foundational Study for Computational Emotion Classification and Generative AI Applications in Literary Texts**
+            2025-02-13. The first-author poster presentation with Haein Ji and Byungjun Kim as co-authors at the 2nd Korean Modern Literature Scholars Conference, Sungkyunkwan University, Seoul.
+            [Program](https://bkksg.com/project/159) · [DOI](https://doi.org/10.5281/zenodo.15055795)
+
+    Research Projects:
+      - bullet: |
+          **Multilingual and Multi-layered Cultural Heritage Description Platform for AI Smart Docents**
+            2025-09 – 2026-02. Research assistant on a platform for generating cultural heritage descriptions focused on Joseon-period Buddhist paintings.
+            [E-book](https://wikidocs.net/book/18796)
+
+      - bullet: |
+          **Advanced NLP and LLM-Based Digital Korean Studies Research and Education Methodology**
+            2025-03 – 2025-08. Research assistant on computational methods for digital Korean studies and education.
+            [E-book](https://wikidocs.net/book/17854)
+
+      - bullet: |
+          **Networked Educational Model in Digital Humanities**
+            2025-03 – 2025-06. External participating researcher and annotator on a National Research Foundation of Korea project. [Dataset](https://zenodo.org/records/16616347)
+
+      - bullet: |
+          **Ontology and LOD System for Inmulgo (人物考)**
+            2024-09 – 2025-02. Research assistant on ontology design and linked open data system construction.
+            [E-book](https://wikidocs.net/book/16878)
+
+      - bullet: |
+          **Historical Document Data Design and Educational Content**
+            2024-03 – 2024-08. Research assistant on prior model analysis and educational content for historical document data design.
+            [E-book](https://wikidocs.net/book/14569)
+
     Experience:
+      - company: "Digital Humanities 2026: Book of Abstracts, ADHO"
+        position: Cover Designer
+        start_date: 2026
+        end_date: 2026
+        summary: "[Book of Abstracts](https://zenodo.org/records/22656106)"
+
       - company: Korean Modern Literature Scholars Conference
         position: Web Designer and Web Publisher
         start_date: 2025-06
@@ -78,158 +247,23 @@ cv:
         start_date: 2013
         end_date: 2019
 
-    Research Projects:
-      - bullet: |
-          **Multilingual and Multi-layered Cultural Heritage Description Platform for AI Smart Docents**
-            2025-09 – 2026-02. Research assistant on a platform for generating cultural heritage descriptions focused on Joseon-period Buddhist paintings.
-
-      - bullet: |
-          **Advanced NLP and LLM-Based Digital Korean Studies Research and Education Methodology**
-            2025-03 – 2025-08. Research assistant on computational methods for digital Korean studies and education.
-
-      - bullet: |
-          **Networked Educational Model in Digital Humanities**
-            2025-03 – 2025-06. External participating researcher and annotator on a National Research Foundation of Korea project. [Dataset](https://zenodo.org/records/16616347)
-
-      - bullet: |
-          **Ontology and LOD System for Inmulgo (人物考)**
-            2024-09 – 2025-02. Research assistant on ontology design and linked open data system construction.
-
-      - bullet: |
-          **Historical Document Data Design and Educational Content**
-            2024-03 – 2024-08. Research assistant on prior model analysis and educational content for historical document data design.
-
-    Publications:
-      - title: "Co-Reading with AI: Color Visualization of Emotion Data in Korean Modern Poetry"
-        authors:
-          - I Ro Lim
-        publisher: The Academy of Korean Studies
-        releaseDate: 2026
-        url: https://www.riss.kr/search/detail/DetailView.do?p_mat_type=be54d9b8bc7cdb09&control_no=7c72357b996262a6ffe0bdc3ef48d419&keyword=%EC%9E%84%EC%9D%B4%EB%A1%9C
-        summary: Iro Lim. M.A. thesis in Cultural Informatics.
-
-      - title: "KPoEM: A Human-Annotated Dataset for Emotion Classification and RAG-Based Poetry Generation in Korean Modern Poetry"
-        authors:
-          - I Ro Lim
-          - Haein Ji
-          - Byungjun Kim
-        publisher: The Review of Korean Studies, 29(1), 161–206
-        releaseDate: 2026
-        url: https://doi.org/10.25024/review.2026.29.1.006
-        summary: Iro Lim, Haein Ji, and Byungjun Kim. First-author journal article.
-
-      - title: 오늘도 꽃은 피어라 (Flowers Bloom, Still)
-        authors:
-          - 임이로
-        publisher: 선한능력
-        releaseDate: 2024
-        url: https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000010798546
-        summary: "Iro Lim (임이로). Poetry collection. Writing, design, artwork, and editing by Iro Lim. ISBN: 9791197382765."
-
-    Datasets and Models:
-      - bullet: |
-          **Co-Reading Module: Emotion-to-Color Transformation Algorithm**
-            2026. Sole author and developer of the emotion-to-color transformation module for human–AI Co-Reading.
-            [Code](https://github.com/poet-developer/Co-Reading)
-
-      - bullet: |
-          **KPoEM (Korean Poetry Emotion Mapping) Dataset — Producer**
-            2025. First author and producer of a human-annotated emotion dataset for Korean modern poetry, developed with Haein Ji, Seul Koo, J. Yun, S.-yi Jung, and Byungjun Kim at AKS-DHLAB.
-            [Hugging Face DOI](https://doi.org/10.57967/hf/6303) · [Zenodo](https://zenodo.org/records/15598092)
-
-      - bullet: |
-          **KCoEM (Korean Color Emotion Mapping) Dataset — Producer**
-            2025. Sole producer of a Korean color–emotion mapping dataset.
-            [DOI](https://doi.org/10.5281/zenodo.17797747) · [Dataset record](https://zenodo.org/records/17797748)
-
-      - bullet: |
-          **KPoEM Emotion Classification Model — Producer**
-            2025. First author and producer of an emotion classification model for Korean modern poetry, developed with Haein Ji and Byungjun Kim at AKS-DHLAB.
-            [Hugging Face DOI](https://doi.org/10.57967/hf/6301)
-
-      - bullet: |
-          **KNoTE (Korean Novel TEI Encoded) Dataset v4 — Annotator**
-            2026. Annotator for a TEI-encoded Korean novel dataset.
-            [DOI](https://doi.org/10.5281/zenodo.19813475)
-
-    Selected Presentations:
-      - bullet: |
-          - **Developing an AI Cultural Heritage Docent Web Prototype: Internalizing Institutional Guidelines for Responsible Curation**
-            2026-07-30. Co-first-author presentation with Songyi Jeong and Baro Kim at DH2026, Alliance of Digital Humanities Organizations (ADHO), Daejeon, Republic of Korea.
-            [DOI](https://doi.org/10.5281/zenodo.21803582) · [Program](https://dh2026.adho.org/)
-
-      - bullet: |
-          - **KPoEM: Visualizing Emotion Data in Modern Korean Poetry through a Web-Based Interpretive Interface**
-            2026-07-29. The first-author presentation with Byungjun Kim as a co-author, at DH2026, Alliance of Digital Humanities Organizations (ADHO), Daejeon, Republic of Korea.
-            [DOI](https://doi.org/10.5281/zenodo.21779517) · [Program](https://dh2026.adho.org/)
-
-      - bullet: |
-          - **Co-Reading: A Human–AI Co-Reader Media System for Poetry–Emotion–Color**
-            2026-01-23. The first-author presentation with Byungjun Kim as a co-author, at the HKADH 2026 Conference, Hong Kong Association for Digital Humanities, Hong Kong.
-            [Program](https://2026.hkadh.org/) · [DOI](https://doi.org/10.5281/zenodo.18753718)
-
-      - bullet: |
-          - **데이터셋의 환경적 전환: 인공지능과 함께 읽기(Co-Reading)를 통한 한국 근현대 시–감정–색채 멀티모달 미디어**
-            2025-12. Sole-author presentation at the “Unfamiliar Boundaries of Film and Media, Mediating Research” Graduate Student Conference, Chung-Ang University Center for Cinema and Media Studies, Seoul.
-            [Program](https://cau-ccms.com/allpost/announce-ko/29-1/) · [DOI](https://doi.org/10.5281/zenodo.17850832)
-
-      - bullet: |
-          - **한국 근현대시의 감정 분석과 인공지능 시 창작 응용: KPoEM 데이터셋 구축과 활용**
-            2025-10-18. The first-author presentation with Haein Ji and Byungjun Kim as co-authors at the 180th Conference of the Bangyo Language and Literature Society, Sungkyunkwan University, Seoul.
-            [Program](http://bangyo.or.kr/notice/view.asp?key=176&Page=1) · [DOI](https://doi.org/10.5281/zenodo.18752999)
-
-      - bullet: |
-          - **Decoding the Poetic Language of Emotion in Korean Modern Poetry: Insights from a Human-Labeled Dataset and AI Modeling**
-            2025-04-25. The first-author presentation with Haein Ji and Byungjun Kim as co-authors at the Digital Humanities and Social Sciences Korea Conference, University of Pennsylvania, Philadelphia.
-            [Program](https://bkksg.com/project/165) · [DOI](https://doi.org/10.5281/zenodo.18752715)
-
-      - bullet: |
-          - **Constructing an Emotion-Labeled Dataset of Modern Korean Poetry: A Foundational Study for Computational Emotion Classification and Generative AI Applications in Literary Texts**
-            2025-02-13. The first-author poster presentation with Haein Ji and Byungjun Kim as co-authors at the 2nd Korean Modern Literature Scholars Conference, Sungkyunkwan University, Seoul.
-            [Program](https://bkksg.com/project/159) · [DOI](https://doi.org/10.5281/zenodo.15055795)
-
-    Awards:
-      - title: DH Awards 2025 Nominee — KPoEM Dataset
-        date: 2025
-        awarder: DH Awards
-        summary: The KPoEM Dataset was nominated for the DH Awards 2025.
-
-      - title: Humanities and Social Sciences Master's Student Research Grant
-        date: 2025-08
-        awarder: National Research Foundation of Korea
-        summary: Selected for the 2025 master's student research support program.
-
-      - title: Research Scholarship
-        date: 2026
-        awarder: The Academy of Korean Studies
-
-      - title: Tuition Fee Exemption Scholarship
-        date: 2025
-        awarder: The Academy of Korean Studies
-
-      - title: Silver Prize, Humanities Column Category
-        date: 2023
-        awarder: 5th Cosmian Awards
-
-      - title: Scholarship Recipient
-        awarder: Samsung Dream Scholarship Foundation
-
     Skills:
-      - name: Programming
+      - name: Programming and Web Development
         level: Advanced
-        keywords: "Python, R, JavaScript, C++"
+        keywords: "Python, JavaScript, Next.js, FastAPI, C++, R"
 
-      - name: AI and Data Analysis
+      - name: AI and Machine Learning
         level: Advanced
-        keywords: "PyTorch, TensorFlow, Pandas, NumPy, RAG, LangChain, Prompt Engineering"
+        keywords: "PyTorch, TensorFlow, RAG, LangChain, SHAP"
 
-      - name: Humanities Data
+      - name: Data and Knowledge Representation
         level: Advanced
-        keywords: "XML/TEI, RDF, Protégé, Linked Open Data, MSSQL, MySQL, Labeled Data"
+        keywords: "Pandas, NumPy, XML/TEI, RDF, Neo4j, SQL, NoSQL"
 
-      - name: Design and Media
+      - name: Visualization and Interactive Media
         level: Advanced
-        keywords: "Figma, Adobe Creative Suite, Blender, Cinema 4D, Data Visualization, Exhibition Design"
+        keywords: "Plotly, Data Visualization, Arduino"
 
-    Interests:
-      - keywords: "Human–Computer Interaction, Media Aesthetics, Artificial Intelligence, Art, Digital Humanities"
+      - name: Design and Creative Technologies
+        level: Advanced
+        keywords: "Adobe Creative Suite, Blender, Cinema 4D, Exhibition Design"

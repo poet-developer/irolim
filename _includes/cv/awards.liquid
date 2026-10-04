@@ -1,0 +1,15 @@
+{% comment %} Site override: use the same list structure as Selected Presentations. {% endcomment %}
+{% for entry in entries %}
+  <ul class="card-text font-weight-light list-group list-group-flush">
+    <li class="list-group-item">
+      {% if entry.url %}
+        <strong><a href="{{ entry.url }}">{{ entry.title }}</a></strong>
+      {% else %}
+        <strong>{{ entry.title }}</strong>
+      {% endif %}
+      {% if entry.date %}{{ entry.date }}.{% endif %}
+      {% if entry.awarder %}{{ entry.awarder }}.{% endif %}
+      {% if entry.summary %}{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}{% endif %}
+    </li>
+  </ul>
+{% endfor %}
