@@ -4,7 +4,7 @@ title: Exhibition Planning & Design Intern for SAHNG-UP GALLERY | CROSSING ONE
 description: Visual Identity · Exhibition Branding · Graphic Design · Marketing Communication
 
 img: assets/img/exhibition/crossing0.png
-importance: 4
+importance: 4.5
 category: fun
 research_status: completed
 research_years: "2023"
