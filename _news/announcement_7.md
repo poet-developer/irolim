@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Presented **“KPoEM: Visualizing Emotion Data in Modern Korean Poetry through a Web-Based Interpretive Interface”** as the first author with Byungjun Kim as co-author at the DH2026 Conference of the Alliance of Digital Humanities Organizations (ADHO) in Daejeon, South Korea. [Program](https://doi.org/10.5281/zenodo.21779517)
+Presented **“KPoEM: Visualizing Emotion Data in Modern Korean Poetry through a Web-Based Interface Prototype”** as the first author with Byungjun Kim as co-author at the DH2026 Conference of the Alliance of Digital Humanities Organizations (ADHO) in Daejeon, South Korea. [Program](https://doi.org/10.5281/zenodo.21779517)

@@ -382,7 +382,7 @@ Related collaborative publication: Lim, Iro, Haein Ji, and Byungjun Kim. 2026. �
 
 The following presentations document the development of KPoEM, the Co-Reading framework, and the interpretive interface.
 
-- **DH2026 · Alliance of Digital Humanities Organizations (ADHO)** — July 29, 2026, Daejeon, Republic of Korea. Iro Lim and Byungjun Kim. “KPoEM: Visualizing Emotion Data in Modern Korean Poetry through a Web-Based Interpretive Interface.” First-author presentation. [DOI: 10.5281/zenodo.21779517](https://doi.org/10.5281/zenodo.21779517).
+- **DH2026 · Alliance of Digital Humanities Organizations (ADHO)** — July 29, 2026, Daejeon, Republic of Korea. Iro Lim and Byungjun Kim. “KPoEM: Visualizing Emotion Data in Modern Korean Poetry through a Web-Based Interface Prototype.” First-author presentation. [DOI: 10.5281/zenodo.21779517](https://doi.org/10.5281/zenodo.21779517).
 
 - **HKADH 2026 · Hong Kong Association for Digital Humanities** — January 23, 2026, The Chinese University of Hong Kong, Hong Kong. Iro Lim and Byungjun Kim. “Co-Reading: A Human–AI Co-Reader Media System for Poetry–Emotion–Color.” First-author poster presentation. [DOI: 10.5281/zenodo.18753718](https://doi.org/10.5281/zenodo.18753718).
 
