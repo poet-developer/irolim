@@ -18,6 +18,9 @@ _styles: |
     object-fit: cover;
     object-position: center top;
   }
+  .projects .card-img-top[src*="/studio/tableau"] {
+    object-position: right center;
+  }
   .projects .project-status {
     display: inline-flex;
     align-items: center;
