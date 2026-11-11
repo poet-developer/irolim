@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Computational Media Researcher · Poet · Developer
+subtitle: Researcher · Poet · Developer
 
 profile:
   align: right
@@ -25,7 +25,9 @@ latest_posts:
 
 <div class="about-content" markdown="1">
 
-I am a computational media researcher, poet, and developer interested in designing interactive systems as environments in which people interpret and make meaning with artificial intelligence. My research brings together **human–computer interaction (HCI), media aesthetics, artificial intelligence, art, and digital humanities**. I explore how datasets, models, and interfaces shape the ways we encounter cultural works and participate in interpretation.
+I am a researcher, poet, and developer interested in designing interactive systems as environments in which people interpret and make meaning with artificial intelligence. My research brings together **human–computer interaction (HCI), media aesthetics, artificial intelligence, art, and digital humanities**. I explore how datasets, models, and interfaces shape the ways we encounter cultural works and participate in interpretation.
+
+I am currently a researcher at the Institute for Occupational Health, Yonsei University College of Medicine, where I work on dataset development, data standardization, and the practical application of artificial intelligence in occupational health research.
 
 My master’s thesis, <a href="{% link _projects/7_project.md %}" style="color: var(--global-theme-color);"><em style="color: inherit;">Co-Reading with AI: Color Visualization of Emotion Data in Korean Modern Poetry</em></a>, was supervised by Professor [Byungjun Kim](https://digitalhumanities.kr/members/Byungjun.html) at The Academy of Korean Studies. The research translated emotions in modern Korean poetry into color, realizing the full research process from dataset construction and model development to an interface prototype. Over the course of my two-year master’s program, I led the project toward a single research goal, progressively developing and presenting its components at seven national and international conferences. As part of this process, I also conducted collaborative research that resulted in a first-author journal publication and laid the groundwork for my thesis. The thesis project was selected for the **2025 Master’s Student Research Grant, awarded to 100 researchers nationwide**, under the research category of Affective Science and Applied Aesthetics, and was funded by **the Ministry of Education of the Republic of Korea and the National Research Foundation of Korea (NRF-2025S1A5B5A20019820)**. The project brought together my long-standing interests in media, design, and AI, which I had been exploring since my undergraduate years, into a shared environment for literary interpretation.
 
@@ -44,10 +46,11 @@ I am currently working with Professor [Baro Kim](https://digitalhumanities.kr/me
 
 ## Work Experience
 
+- **2026-Present** — Researcher, Institute for Occupational Health, Yonsei University College of Medicine
+- **2023–Present** — Columnist, Cosmian News
 - **2025–2026** — Web Designer and Web Publisher, Korean Modern Literature Scholars Conference
 - **2025–2026** — CI and Web Designer, DH2026, Alliance of Digital Humanities Organizations (ADHO)
 - **2024–2026** — Researcher, Center for Digital Humanities at The Academy of Korean Studies
-- **2023–Present** — Columnist, Cosmian News
 - **Mar–Apr 2025** — Exhibition Planning and Design, Art Seoul 2025, Hangaram Art Museum
 - **Jan 2025** — Exhibition Planning and Design, WORLD ART EXPO 2025, COEX
 - **Sep 2024** — Web and CI Design, AKS Center for Digital Humanities
