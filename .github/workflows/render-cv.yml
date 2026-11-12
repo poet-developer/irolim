@@ -1,14 +1,8 @@
 name: Render a CV
 on:
-  push:
-    branches:
-      - main
-      - master
-    paths:
-      - "_data/cv.yml"
-      - "assets/rendercv/design.yaml"
-      - "assets/rendercv/locale.yaml"
-      - "assets/rendercv/settings.yaml"
+  # The site publishes assets/pdf/iro_cv.pdf, maintained independently.
+  # Its customized _data/cv.yml includes fields outside the RenderCV schema.
+  # Keep generation opt-in until a RenderCV-specific input is supplied.
   workflow_call:
   workflow_dispatch:
 permissions:
