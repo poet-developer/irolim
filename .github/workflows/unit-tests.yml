@@ -48,7 +48,7 @@ jobs:
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3.5"
+          ruby-version: "3.3"
           bundler-cache: true
 
       - name: Setup Python 🐍
@@ -68,6 +68,9 @@ jobs:
 
       - name: Run style contract lint 🧷
         run: npm run lint:style-contract
+
+      - name: Audit site overrides
+        run: bundle exec al-folio upgrade overrides audit
 
       - name: Install build prerequisites 🔧
         run: |

@@ -157,13 +157,13 @@ Drawing on reader-response theory, the thesis understands meaning as something r
 
 The project’s central proposition is that **a dataset can function as an environment for interpretation**. Annotation categories, word choices, and color associations record human judgments. They shape what an AI system can recognize and what a reader subsequently encounters through its outputs.
 
-The thesis brings together McLuhan’s account of media, Peters’s understanding of media as environments, Manovich’s concept of the database as a cultural form, and Drucker’s account of data as *capta*: material selected and constituted through interpretation. These perspectives inform a design in which the dataset mediates a continuing exchange between human experience and machine interpretation.
+The thesis brings together McLuhan’s account of media, Peters’s understanding of media as environments, Manovich’s concept of the database as a cultural form, and Drucker’s account of data as _capta_: material selected and constituted through interpretation. These perspectives inform a design in which the dataset mediates a continuing exchange between human experience and machine interpretation.
 
 In Co-Reading, this exchange follows a recursive path: human readings become structured emotion data; models and algorithms transform those records into color; readers encounter the palette and return to the poem with new associations. The visualization participates in meaning-making because its form influences how the poem is experienced.
 
 ### LENS 02 : AI as a Co-Reader
 
-The term *co-reader* names AI’s interpretive role within this designed relationship. Its responses draw on human annotations, cultural conventions, and contextual instructions. Unexpected associations can invite a reader to notice an unfamiliar emotional possibility, while disagreement can prompt a closer return to the text.
+The term _co-reader_ names AI’s interpretive role within this designed relationship. Its responses draw on human annotations, cultural conventions, and contextual instructions. Unexpected associations can invite a reader to notice an unfamiliar emotional possibility, while disagreement can prompt a closer return to the text.
 
 The thesis approaches this as a conceptual and design experiment. It does not establish that AI experiences poetry as a human does. The reader’s situated response remains essential: a palette acquires literary significance through the act of reading it alongside the poem.
 
@@ -181,10 +181,10 @@ The interface is **a mediating space in which interpretation takes place**. Draw
 
 ### Environmental Media : Construction Two Complementary Datasets
 
-| Resource | Role in Co-Reading | Access |
-| --- | --- | --- |
-| **KPoEM — Korean Poetry Emotion Mapping** | The dataset contains 7,622 entries with expert annotations that preserve multiple emotional readings of poetic lines and works. It provides the foundation for the poetry-specific emotion classifier. | [Dataset DOI](https://doi.org/10.57967/hf/6303) · [Zenodo archive](https://zenodo.org/records/15598092) |
-| **KCoEM — Korean Color Emotion Mapping** | A collection of 348 color records structures emotion–color associations from existing psychological experiments, Korean color literature, and color–emotion models, organized in relation to the KOTE emotion taxonomy. | [DOI Dataset](https://doi.org/10.5281/zenodo.21131097)|
+| Resource                                  | Role in Co-Reading                                                                                                                                                                                                      | Access                                                                                                  |
+| ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| **KPoEM — Korean Poetry Emotion Mapping** | The dataset contains 7,622 entries with expert annotations that preserve multiple emotional readings of poetic lines and works. It provides the foundation for the poetry-specific emotion classifier.                  | [Dataset DOI](https://doi.org/10.57967/hf/6303) · [Zenodo archive](https://zenodo.org/records/15598092) |
+| **KCoEM — Korean Color Emotion Mapping**  | A collection of 348 color records structures emotion–color associations from existing psychological experiments, Korean color literature, and color–emotion models, organized in relation to the KOTE emotion taxonomy. | [DOI Dataset](https://doi.org/10.5281/zenodo.21131097)                                                  |
 
 ### System Development : The Co-Reading Pipeline
 
@@ -195,13 +195,13 @@ The interface is **a mediating space in which interpretation takes place**. Draw
 
 The same poem enters two coordinated paths. The [KPoEM emotion classifier](https://doi.org/10.57967/hf/6301) identifies primary and secondary emotions, while an LLM interprets the poem’s context through a constrained vocabulary of image adjectives. The transformation algorithm combines these outputs.
 
-| Step | Process | Interpretive function |
-| --- | --- | --- |
-| Emotion classification | Select the two highest-scoring emotions from the KPoEM model’s output. | Carry accumulated human annotations into the reading of a new text. |
-| Hue selection | Search KCoEM using priority rules; apply analogous or contrasting color relationships according to emotional valence, with rules for neutral emotions and missing candidates. | Express relationships between the two emotions through color composition. |
-| Contextual interpretation | Use context engineering to select an image adjective from the I.R.I image scale. | Introduce the poem’s atmosphere and imagery into palette construction. |
-| Tone adjustment | Preserve the selected hues while adjusting saturation and brightness using the adjective-associated palette data. | Give similar emotion categories different visual atmospheres according to context. |
-| Palette presentation | Display the resulting colors in a 6:4 area ratio. | Offer a sensory object that the reader can revisit alongside the poem. |
+| Step                      | Process                                                                                                                                                                       | Interpretive function                                                              |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| Emotion classification    | Select the two highest-scoring emotions from the KPoEM model’s output.                                                                                                        | Carry accumulated human annotations into the reading of a new text.                |
+| Hue selection             | Search KCoEM using priority rules; apply analogous or contrasting color relationships according to emotional valence, with rules for neutral emotions and missing candidates. | Express relationships between the two emotions through color composition.          |
+| Contextual interpretation | Use context engineering to select an image adjective from the I.R.I image scale.                                                                                              | Introduce the poem’s atmosphere and imagery into palette construction.             |
+| Tone adjustment           | Preserve the selected hues while adjusting saturation and brightness using the adjective-associated palette data.                                                             | Give similar emotion categories different visual atmospheres according to context. |
+| Palette presentation      | Display the resulting colors in a 6:4 area ratio.                                                                                                                             | Offer a sensory object that the reader can revisit alongside the poem.             |
 
 ### Transformation : Poetry → Emotion → Color
 
@@ -212,27 +212,27 @@ The same poem enters two coordinated paths. The [KPoEM emotion classifier](https
   <p class="co-reading-case-route"><span>Poetry</span><span aria-hidden="true">→</span><span>Pleased + Joy</span><span aria-hidden="true">→</span><span class="co-reading-case-swatch" aria-hidden="true"></span><span>Blue-green + Green</span></p>
 </header>
 
-The thesis follows an excerpt from Shin Seok-jeong’s *In Your Eyes* (네 눈망울에서는) through the pipeline. Its primary and secondary emotions lead to blue-green and green hues; the contextual adjective then guides their brightness and saturation. The example shows how a palette combines structured rules with contextual interpretation.
+The thesis follows an excerpt from Shin Seok-jeong’s _In Your Eyes_ (네 눈망울에서는) through the pipeline. Its primary and secondary emotions lead to blue-green and green hues; the contextual adjective then guides their brightness and saturation. The example shows how a palette combines structured rules with contextual interpretation.
 
 **Poetic input and contextual interpretation**
 
-| Input poem excerpt (English translation) | AI-generated image adjective |
-| --- | --- |
-| From your eyes comes the scent<br>of green May<br>and white wild roses.<br><br>Your bright, shining eyes<br>hold within them<br>the stories of the stars. | Pure |
+| Input poem excerpt (English translation)                                                                                                                  | AI-generated image adjective |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
+| From your eyes comes the scent<br>of green May<br>and white wild roses.<br><br>Your bright, shining eyes<br>hold within them<br>the stories of the stars. | Pure                         |
 
 **Emotion classification results (Primary emotion / Secondary emotion)**
 
-| Rank | Emotion | Score |
-| --- | --- | --- |
-| 1 | Pleased (Cute / Pretty) | 0.97 |
-| 2 | Joy | 0.89 |
+| Rank | Emotion                 | Score |
+| ---- | ----------------------- | ----- |
+| 1    | Pleased (Cute / Pretty) | 0.97  |
+| 2    | Joy                     | 0.89  |
 
 **Emotion-to-color mapping**
 
-| Role | Selected emotion | Base hue |
-| --- | --- | --- |
-| Primary | Pleased (Cute / Pretty) | Blue Green |
-| Secondary | Joy | Green |
+| Role      | Selected emotion        | Base hue   |
+| --------- | ----------------------- | ---------- |
+| Primary   | Pleased (Cute / Pretty) | Blue Green |
+| Secondary | Joy                     | Green      |
 
 <figure class="co-reading-figure" aria-label="Illustrative two-color palette: a muted blue-green primary color and a soft green secondary color, shown in a six-to-four ratio.">
   <div style="display: grid; grid-template-columns: 3fr 2fr; max-width: 640px; margin: 1.5rem auto 0.75rem; gap: 0.4rem 0;">
@@ -265,23 +265,23 @@ In addition to “Pure,” the LLM also selected “Sensuous” during image-adj
 
 **Poetic input and contextual interpretation**
 
-| Input poem excerpt (English translation) | AI-generated image adjective |
-| --- | --- |
-| Snow falls thick and deep.<br> Beautiful Natasha loves me,<br> and somewhere a white donkey, delighted by tonight, will bray aloud.| Lovely |
+| Input poem excerpt (English translation)                                                                                            | AI-generated image adjective |
+| ----------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
+| Snow falls thick and deep.<br> Beautiful Natasha loves me,<br> and somewhere a white donkey, delighted by tonight, will bray aloud. | Lovely                       |
 
 **Emotion classification results (Primary emotion / Secondary emotion)**
 
-| Rank | Emotion | Score |
-| --- | --- | --- |
-| 1 | Pleased (Cute / Pretty) | 0.95 |
-| 2 | Caring | 0.93 |
+| Rank | Emotion                 | Score |
+| ---- | ----------------------- | ----- |
+| 1    | Pleased (Cute / Pretty) | 0.95  |
+| 2    | Caring                  | 0.93  |
 
 **Emotion-to-color mapping**
 
-| Role | Selected emotion | Base hue |
-| --- | --- | --- |
-| Primary | Pleased (Cute / Pretty) | Orange |
-| Secondary | Caring | Red |
+| Role      | Selected emotion        | Base hue |
+| --------- | ----------------------- | -------- |
+| Primary   | Pleased (Cute / Pretty) | Orange   |
+| Secondary | Caring                  | Red      |
 
 <figure class="co-reading-figure" aria-label="Two-color palette: a pale warm orange primary color and a muted red secondary color, shown in a six-to-four ratio.">
   <div style="display: grid; grid-template-columns: 3fr 2fr; max-width: 640px; margin: 1.5rem auto 0.75rem; gap: 0.4rem 0;">
@@ -303,25 +303,26 @@ In addition to “Pure,” the LLM also selected “Sensuous” during image-adj
 **Poetic input and contextual interpretation**
 
 | Input poem excerpt (English translation) | AI-generated image adjective |
-| --- | --- |
+| ---------------------------------------- | ---------------------------- |
+
 | Anyone who has ever taken flight<br>
 for freedom will know.<br>what the skylark sees <br>when it sings,<br>why the scent of blood<br>is mingled with freedom,<br>and why revolution<br>is a lonely thing. | Deep (깊은) |
 
-*English translation prepared for this example from the Korean excerpt in the reference table.*
+_English translation prepared for this example from the Korean excerpt in the reference table._
 
 **Emotion classification results (Primary emotion / Secondary emotion)**
 
-| Rank | Emotion | Score |
-| --- | --- | --- |
-| 1 | pitifulness/disappointment (안타까움 / 실망) | 0.94 |
-| 2 | Sadness (슬픔) | 0.88 |
+| Rank | Emotion                                      | Score |
+| ---- | -------------------------------------------- | ----- |
+| 1    | pitifulness/disappointment (안타까움 / 실망) | 0.94  |
+| 2    | Sadness (슬픔)                               | 0.88  |
 
 **Emotion-to-color mapping**
 
-| Role | Selected emotion | Base hue |
-| --- | --- | --- |
-| Primary | pitifulness/disappointmen | Red |
-| Secondary | Sadness | Orange |
+| Role      | Selected emotion          | Base hue |
+| --------- | ------------------------- | -------- |
+| Primary   | pitifulness/disappointmen | Red      |
+| Secondary | Sadness                   | Orange   |
 
 <figure class="co-reading-figure" aria-label="Two-color palette: a dark burgundy primary color and a muted grayish orange secondary color, shown in a six-to-four ratio.">
   <div style="display: grid; grid-template-columns: 3fr 2fr; max-width: 640px; margin: 1.5rem auto 0.75rem; gap: 0.4rem 0;">
@@ -347,12 +348,11 @@ The web prototype brings **close reading, distant reading, and Co-Reading** into
   <figcaption>Figure 5. System architecture of the KPoEM web interface, connecting data processing and AI inference with three reading environments.</figcaption>
 </figure>
 
-
-| Reading mode | Interface experience | Emphasis |
-| --- | --- | --- |
-| **Close reading** | Select a poetic line and inspect the emotion tags assigned by individual annotators. | Differences and overlaps in readings of a particular passage. |
-| **Distant reading** | Explore aggregated emotion distributions and work–emotion heatmaps. | Patterns across works and a poet’s corpus. |
-| **Co-Reading** | Select a poem, read its text, request a reading, and explore a two-color palette and its color information. | Sensory reinterpretation through the interaction of text, data, and AI. |
+| Reading mode        | Interface experience                                                                                        | Emphasis                                                                |
+| ------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| **Close reading**   | Select a poetic line and inspect the emotion tags assigned by individual annotators.                        | Differences and overlaps in readings of a particular passage.           |
+| **Distant reading** | Explore aggregated emotion distributions and work–emotion heatmaps.                                         | Patterns across works and a poet’s corpus.                              |
+| **Co-Reading**      | Select a poem, read its text, request a reading, and explore a two-color palette and its color information. | Sensory reinterpretation through the interaction of text, data, and AI. |
 
 The thesis presents a static web prototype that demonstrates these reading modes and their interaction structure. In the Co-Reading view, selecting a work, reading the text, encountering the “Reading…” state, and receiving a palette form a deliberate temporal sequence. The interface invites attention to interpretation as a process, with opportunities to reset, compare, and read again.
 
@@ -360,7 +360,7 @@ The thesis presents a static web prototype that demonstrates these reading modes
 
 The project transforms human emotion data into **environmental media for sensory experience**. By translating poetic emotions into color, it invites readers to experience poetry through both reading and seeing, opening a cross-sensory dimension of literary reception. The dataset becomes a visual medium through which human interpretations can be encountered and reconsidered.
 
-The web interface brings this perspective into practice by integrating close reading, distant reading, and Co-Reading. It frames **visualization as a condition for interpretation**, allowing readers to experience how meaning takes shape through interactions among texts, datasets, humans, and AI. Within this environment, AI takes the role of a **co-reader**, participating in the construction of meaning. Co-Reading can thus be understood as a form of *postwriting*: literary texts are reconfigured across data and visual media, and further meanings emerge through readers’ engagement.
+The web interface brings this perspective into practice by integrating close reading, distant reading, and Co-Reading. It frames **visualization as a condition for interpretation**, allowing readers to experience how meaning takes shape through interactions among texts, datasets, humans, and AI. Within this environment, AI takes the role of a **co-reader**, participating in the construction of meaning. Co-Reading can thus be understood as a form of _postwriting_: literary texts are reconfigured across data and visual media, and further meanings emerge through readers’ engagement.
 
 The framework could extend to fiction, essays, and other cultural texts through connections with different language models and external data resources. Its current scope remains limited by the poetry corpus, culturally situated emotion–color mappings, and the interface’s influence on attention. Further user studies are needed to examine how this shared interpretive environment shapes literary experience.
 
@@ -372,11 +372,11 @@ This research was supported by the Ministry of Education of the Republic of Kore
 
 ## Publication
 
-Lim, Iro. 2026. *Co-Reading with AI: Color Visualization of Emotion Data in Korean Modern Poetry.* Master’s thesis in Cultural Informatics, The Graduate School of Korean Studies, The Academy of Korean Studies. Advisor: Byungjun Kim. [Full thesis (PDF)]({{ '/assets/pdf/M-A-Thesis.pdf' | relative_url }}).
+Lim, Iro. 2026. _Co-Reading with AI: Color Visualization of Emotion Data in Korean Modern Poetry._ Master’s thesis in Cultural Informatics, The Graduate School of Korean Studies, The Academy of Korean Studies. Advisor: Byungjun Kim. [Full thesis (PDF)]({{ '/assets/pdf/M-A-Thesis.pdf' | relative_url }}).
 
 This summary draws on the thesis’s introduction (pp. 1–18), KCoEM and emotion–color algorithm chapters (pp. 40–63), system and interface design (pp. 64–95), and conclusion (pp. 96–98).
 
-Related collaborative publication: Lim, Iro, Haein Ji, and Byungjun Kim. 2026. “KPoEM: A Human-Annotated Dataset for Emotion Classification and RAG-Based Poetry Generation in Korean Modern Poetry.” *The Review of Korean Studies* 29 (1): 161–206. [DOI: 10.25024/review.2026.29.1.006](https://doi.org/10.25024/review.2026.29.1.006).
+Related collaborative publication: Lim, Iro, Haein Ji, and Byungjun Kim. 2026. “KPoEM: A Human-Annotated Dataset for Emotion Classification and RAG-Based Poetry Generation in Korean Modern Poetry.” _The Review of Korean Studies_ 29 (1): 161–206. [DOI: 10.25024/review.2026.29.1.006](https://doi.org/10.25024/review.2026.29.1.006).
 
 ## References
 

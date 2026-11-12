@@ -38,13 +38,13 @@ The vectors are indexed with **FAISS** and connected to the generation pipeline 
 
 Retrieval proceeds in two stages, using the emotion classifier’s output as a reference for selecting context:
 
-| Stage | Method | Output |
-| --- | --- | --- |
-| Input analysis | The KPoEM classifier scores the input poem across 44 emotion categories. | An emotion profile for the input. |
-| Semantic retrieval | Cosine similarity compares the input embedding with poetic units in the vector database. | The 100 most semantically similar candidates. |
-| Emotion-constrained filtering | Candidate emotion metadata is compared with the input’s emotion scores. | Ten contexts selected for semantic relevance and emotional alignment. |
+| Stage                         | Method                                                                                   | Output                                                                |
+| ----------------------------- | ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| Input analysis                | The KPoEM classifier scores the input poem across 44 emotion categories.                 | An emotion profile for the input.                                     |
+| Semantic retrieval            | Cosine similarity compares the input embedding with poetic units in the vector database. | The 100 most semantically similar candidates.                         |
+| Emotion-constrained filtering | Candidate emotion metadata is compared with the input’s emotion scores.                  | Ten contexts selected for semantic relevance and emotional alignment. |
 
-This filtering step is intended to reduce irrelevant context while retaining expressions suited to the input’s emotional tone. For example, the paper’s analysis of Kim Chunsu’s *Kkot* (Flower) identifies care (0.90), realization (0.87), and admiration (0.86) as its highest-scoring emotions. These scores help guide the selection of related poetic units.
+This filtering step is intended to reduce irrelevant context while retaining expressions suited to the input’s emotional tone. For example, the paper’s analysis of Kim Chunsu’s _Kkot_ (Flower) identifies care (0.90), realization (0.87), and admiration (0.86) as its highest-scoring emotions. These scores help guide the selection of related poetic units.
 
 ## Prompt Design and Generation
 
@@ -58,7 +58,7 @@ Generation uses **Midm-2.0-Base-Instruct**, with LangChain dynamically inserting
 
 The paper presents generation examples using poems by **Kim Chunsu, Kim Su-young, and Kim Hyesoon**, illustrating the framework across different poetic styles.
 
-For Kim Chunsu’s *Kkot*, the generated poem, *The Moment I Call Your Name*, carries forward the source’s relationship between naming and the recognition of another’s existence. The paper discusses this continuity of imagery and emotional tone as an example of how retrieval and emotion guidance can shape generated poetry. Further examples use Kim Su-young’s *Sarang* (Love) and Kim Hyesoon’s *Nalgae hwansangtong* (Phantom Pain Wings).
+For Kim Chunsu’s _Kkot_, the generated poem, _The Moment I Call Your Name_, carries forward the source’s relationship between naming and the recognition of another’s existence. The paper discusses this continuity of imagery and emotional tone as an example of how retrieval and emotion guidance can shape generated poetry. Further examples use Kim Su-young’s _Sarang_ (Love) and Kim Hyesoon’s _Nalgae hwansangtong_ (Phantom Pain Wings).
 
 #### Input and Generated Output
 
@@ -303,7 +303,7 @@ This research builds on the [KPoEM Dataset & Emotion Classification Model]({% li
 
 ## Publication
 
-Lim, Iro, Haein Ji, and Byungjun Kim. 2026. “KPoEM: A Human-Annotated Dataset for Emotion Classification and RAG-Based Poetry Generation in Korean Modern Poetry.” *The Review of Korean Studies* 29 (1): 161–206. [DOI: 10.25024/review.2026.29.1.006](https://doi.org/10.25024/review.2026.29.1.006).
+Lim, Iro, Haein Ji, and Byungjun Kim. 2026. “KPoEM: A Human-Annotated Dataset for Emotion Classification and RAG-Based Poetry Generation in Korean Modern Poetry.” _The Review of Korean Studies_ 29 (1): 161–206. [DOI: 10.25024/review.2026.29.1.006](https://doi.org/10.25024/review.2026.29.1.006).
 
 This project summary focuses on the RAG framework and generation examples, drawing on pp. 180–188 and Appendix B (pp. 204–206). [Full paper (PDF)]({{ '/assets/pdf/RKS.pdf' | relative_url }}).
 

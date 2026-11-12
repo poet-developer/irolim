@@ -19,7 +19,6 @@ I organized and arranged the exhibition space and collaborated with participatin
     </div>
 </div>
 
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/exhibition/coex2.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
@@ -42,12 +41,10 @@ For the group booth exhibition held as part of WORLD ART EXPO 2025, I planned an
     </div>
 </div>
 
-
 <div class="caption">
     This image can also have a caption. It's like magic.
 </div>
 
 {% raw %}
-
 
 {% endraw %}

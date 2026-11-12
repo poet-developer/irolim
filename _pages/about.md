@@ -54,7 +54,7 @@ I am currently working with Professor [Baro Kim](https://digitalhumanities.kr/me
 - **Mar–Apr 2025** — Exhibition Planning and Design, Art Seoul 2025, Hangaram Art Museum
 - **Jan 2025** — Exhibition Planning and Design, WORLD ART EXPO 2025, COEX
 - **Sep 2024** — Web and CI Design, AKS Center for Digital Humanities
-- **Jun 2023** — Exhibition Brand Design, *CROSSING ONE*, H.ART1
+- **Jun 2023** — Exhibition Brand Design, _CROSSING ONE_, H.ART1
 - **2013–2019** — Band Vocalist
 
 </div>

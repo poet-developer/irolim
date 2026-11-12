@@ -17,7 +17,12 @@
       <table class="table table-sm table-borderless">
         {% for item in news %}
           {% assign news_page = forloop.index0 | divided_by: news_limit %}
-          <tr data-news-page="{{ news_page }}" {% if include.limit and forloop.index > news_limit %}hidden{% endif %}>
+          <tr
+            data-news-page="{{ news_page }}"
+            {% if include.limit and forloop.index > news_limit %}
+              hidden
+            {% endif %}
+          >
             <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
             <td>
               {% if item.inline %}
@@ -41,14 +46,14 @@
 
       <script>
         (() => {
-          const root = document.currentScript.closest("[data-news-pager]");
-          const pager = root?.querySelector(".news-pager");
+          const root = document.currentScript.closest('[data-news-pager]');
+          const pager = root?.querySelector('.news-pager');
           if (!pager) return;
 
-          const rows = [...root.querySelectorAll("[data-news-page]")];
-          const previous = pager.querySelector("[data-news-prev]");
-          const next = pager.querySelector("[data-news-next]");
-          const current = pager.querySelector("[data-news-current]");
+          const rows = [...root.querySelectorAll('[data-news-page]')];
+          const previous = pager.querySelector('[data-news-prev]');
+          const next = pager.querySelector('[data-news-next]');
+          const current = pager.querySelector('[data-news-current]');
           const pageCount = Number(pager.dataset.newsPageCount);
           let page = 0;
 
@@ -62,8 +67,8 @@
             next.disabled = page === pageCount - 1;
           };
 
-          previous.addEventListener("click", () => showPage(page - 1));
-          next.addEventListener("click", () => showPage(page + 1));
+          previous.addEventListener('click', () => showPage(page - 1));
+          next.addEventListener('click', () => showPage(page + 1));
         })();
       </script>
     {% endif %}

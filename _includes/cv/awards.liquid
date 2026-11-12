@@ -3,7 +3,9 @@
   <ul class="card-text font-weight-light list-group list-group-flush">
     <li class="list-group-item">
       {% if entry.url %}
-        <strong><a href="{{ entry.url }}">{{ entry.title }}</a></strong>
+        <strong
+          ><a href="{{ entry.url }}">{{ entry.title }}</a></strong
+        >
       {% else %}
         <strong>{{ entry.title }}</strong>
       {% endif %}
